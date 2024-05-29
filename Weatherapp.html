@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherApp</title>
+    <script src="https://kit.fontawesome.com/408b1390c2.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./weather.css">
+  </head>
+<body>
+  <h1 style="text-align: center;">Note :Internet is required to check weather</h1>
+    <div class="containers">
+        <div id="inputBox">
+           <input type="text" placeholder="Enter City Name" id="search_Box">
+           <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button> 
+        </div>
+        <div class="location-not-found">
+          <h1>Sorry,GeoGraphy Not Found</h1>
+          <img src="./img/location-not-found.svg" alt="Location Not Found" style="height: 150px;">
+        </div>
+
+        <div class="weatherIMG">
+          <img src="./img/clear-day.svg"  alt="hazeWeather"   id="imgSrc">
+         <div class="tempreWrap">
+            <span class="tempre">0&deg;C</span>
+            <p  class="weather_desc">Haze</p>
+         </div>
+         <div class="humid">
+          <div class="wind_wrap">
+              <span class="fa-solid fa-wind ">
+                <BR></BR>
+                <p  style="font-size:20px;" class="air_desc">25 KM/H</p>
+              </span>
+              <p>Air</p>
+          </div>
+          <div class="air">
+              <Span class="fa-solid fa-droplet ">
+                <BR></BR>
+                 <p class="Humidity_Dta">0</p>
+              </Span>
+              <p>Humidity</p>
+          </div>
+       </div>
+
+         </div>
+   
+        
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="./WeatherAPI.js" async></script>
+</body>
+</html> 
+
+    
